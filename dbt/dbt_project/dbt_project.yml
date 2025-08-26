@@ -1,0 +1,15 @@
+name: 'dbt_demo'
+version: '1.0'
+config-version: 2
+
+profile: 'dbt_demo'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  dbt_demo:
+    staging:
+      +schema: staging
+    marts:
+      +schema: marts
